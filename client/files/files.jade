@@ -1,0 +1,11 @@
+template(name="files")
+  .files
+    ul 
+      each files
+        li 
+          a(href="{{ pathFor route='editor' }}")
+            small {{ time }}
+            if name
+              {{name}}
+            else
+              {{_id}}

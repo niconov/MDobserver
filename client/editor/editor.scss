@@ -1,0 +1,44 @@
+@import "../var";
+@import '../mixins';
+
+form#editor{
+  @include flexbox;
+  flex-flow: column;
+  .editor{
+    margin: $gutter 0;
+    @include flexbox;
+    @include flex(1 1 auto);
+    flex-flow: row;
+    textarea, .markdown{
+      width:100%;
+      justify-content: space-around;
+      box-sizing: border-box;
+      padding: 4*$gutter 2*$gutter;
+      border: 1px solid rgba($primary-color, .1);
+      box-sizing: border-box;
+    }
+
+    textarea{
+      margin-right: $gutter/2;
+      font-size: 1em;
+    }
+    .markdown{
+      margin-left: $gutter/2;
+    }
+  }
+}
+
+
+input[type='submit'], input[type='text']{
+  background-color: $white;
+  border: none;
+  border: 1px solid rgba($primary-color, .1);
+  padding: 2*$gutter;
+  font-weight: 400;
+}
+
+input[type='submit']:hover{
+  background-color: rgba($secondary-color, .1);;
+  // color: $white;
+  @include transition(.125s linear);
+}

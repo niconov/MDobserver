@@ -1,0 +1,20 @@
+@import "../var";
+@import '../mixins';
+
+nav{
+  // width: $screen-width;
+  ul{
+    list-style: none;
+    text-align: center;
+    li{
+      display: inline-block;
+      padding: $gutter;
+      color: $primary-color;
+    }
+
+
+    li.brand{
+      font-weight: bold;
+    }
+  }
+}

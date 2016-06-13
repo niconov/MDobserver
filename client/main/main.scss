@@ -1,0 +1,52 @@
+/* CSS declarations go here */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,800,700,600italic,300);
+@import "../var";
+@import '../mixins';
+
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+a.button{
+  padding: $gutter;
+  border: 1px dotted $primary-color;
+}
+
+a.button:hover{
+  padding: $gutter;
+  border: 1px dotted $opposite-color;
+}
+
+a{
+  text-decoration: none;
+  @include transition(.125s linear);
+  @include noselect;
+  cursor: pointer;
+}
+
+a:link {
+  color: $primary-color;
+}
+
+a:visited {
+  color: $primary-color;
+}
+
+a:hover {
+  color: $opposite-color;
+}
+
+a:active {
+  color: darken($opposite-color, 10%);;
+}

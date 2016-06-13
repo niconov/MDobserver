@@ -1,0 +1,86 @@
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+@mixin noselect() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin themify-font {
+  font-family: 'themify';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@mixin fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// @mixin animation ($delay, $duration, $animation) {
+//     -webkit-animation-delay: $delay;
+//     -webkit-animation-duration: $duration;
+//     -webkit-animation-name: $animation;
+//     -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+//     -moz-animation-delay: $delay;
+//     -moz-animation-duration: $duration;
+//     -moz-animation-name: $animation;
+//     -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+
+//     animation-delay: $delay;
+//     animation-duration: $duration;
+//     animation-name: $animation;
+//     animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+// }
+
+@mixin animation( $args ) {
+  -webkit-animation: $args;
+  -moz-animation: $args;
+  -ms-animation: $args;
+  animation: $args;
+}
+
+@mixin transition( $args ) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

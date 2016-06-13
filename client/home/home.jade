@@ -1,0 +1,5 @@
+template(name="home")
+  .home
+    +files
+    //- a(href="{{ pathFor route='files'}}") files
+    a.button(href="{{ pathFor route='editor' _id='new'}}") Новый файл

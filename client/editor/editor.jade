@@ -1,0 +1,10 @@
+template(name="editor")
+  form#editor
+    input#name(type="text" placeholder="Имя Файла" value="{{name}}" )
+    input#id(type="hidden" value="{{_id}}")
+    .editor
+      textarea#mdInput(placeholder="Markdown-текст" rows="20")
+      .markdown#textOutput 
+        
+    .buttons
+      input(type="submit", value="Сохранить")
