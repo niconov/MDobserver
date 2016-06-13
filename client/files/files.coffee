@@ -8,6 +8,7 @@ Template.files.helpers
       day: 'numeric',
 
     return @updatedAt.toLocaleString("ru", options)
+
 Template.files.events
   "click #markAsDeleted": (e, t) ->
     fileId = $(e.target).attr 'data-file-mark-as-deleted'

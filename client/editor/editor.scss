@@ -7,10 +7,11 @@ form#editor{
   .editor{
     margin: $gutter 0;
     @include flexbox;
-    @include flex(1 1 auto);
     flex-flow: row;
     textarea, .markdown{
-      width:100%;
+      @include flex(1 1 auto);
+      min-width: 50%;
+      word-wrap: break-word;
       justify-content: space-around;
       box-sizing: border-box;
       padding: 4*$gutter 2*$gutter;

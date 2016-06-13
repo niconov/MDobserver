@@ -4,6 +4,7 @@
 ul.files{
   margin-bottom: 4*$gutter;
   li.file{
+    list-style: none;
     .delete{
       visibility: hidden;
       margin: 0 $gutter;
