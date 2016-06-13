@@ -15,7 +15,7 @@ form#editor{
       justify-content: space-around;
       box-sizing: border-box;
       padding: 4*$gutter 2*$gutter;
-      border: 1px solid rgba($primary-color, .1);
+      border: 1px dotted rgba($primary-color, .1);
       box-sizing: border-box;
     }
 
@@ -29,11 +29,13 @@ form#editor{
   }
 }
 
-
+// input{
+//   border: dotted;
+// }
 input[type='submit'], input[type='text']{
   background-color: $white;
   border: none;
-  border: 1px solid rgba($primary-color, .1);
+  border: 1px dotted rgba($primary-color, .1);
   padding: 2*$gutter;
   font-weight: 400;
 }

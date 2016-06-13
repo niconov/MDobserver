@@ -17,6 +17,9 @@ body {
 a.button{
   padding: $gutter;
   border: 1px dotted $primary-color;
+  margin-bottom: $gutter;
+  margin-right: $gutter;
+  display: inline-block;
 }
 
 a.button:hover{
