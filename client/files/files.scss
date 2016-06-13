@@ -1,6 +1,23 @@
 @import "../var";
 @import '../mixins';
 
-.files{
+ul.files{
   margin-bottom: 4*$gutter;
+  li.file{
+    .delete{
+      visibility: hidden;
+      margin: 0 $gutter;
+      @include transition(.125s linear);
+      // visibility: hidden:;
+    }
+  }
+
+  li.file:hover{
+    .delete{
+      visibility: visible;
+      // display: inline;
+    }
+  }
+
+
 }

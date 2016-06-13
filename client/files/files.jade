@@ -1,11 +1,13 @@
 template(name="files")
-  .files
-    ul 
-      each files
-        li 
+  ul.files 
+    each files
+      unless deleted 
+        li.file 
+          a.delete.fa.fa-trash-o#markAsDeleted(data-file-mark-as-deleted="{{_id}}")
           a(href="{{ pathFor route='editor' }}")
             small {{ time }}
             if name
               {{name}}
             else
               {{_id}}
+              
